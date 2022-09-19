@@ -33,3 +33,6 @@ Route::get('view/{n}', function ($n) {
     return view('view')->with
     ('numero', $n);
 })->whereNumber('n');
+
+Route::get('/', [DemoController::class,'index']);
+Route::get('/users/{name}', [DemoController::class,'name'])->whereAlphanumeric('name')->name('name');
