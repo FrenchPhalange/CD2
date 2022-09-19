@@ -17,3 +17,4 @@ class DemoController extends Controller
         return view('name', compact['name']);
     }
 }
+// test controller
