@@ -14,7 +14,13 @@ class DemoController extends Controller
 
     public function name($name)
     {
-        return view('name', compact['name']);
+        $students = [
+            "Hussein",
+            "Meyer",
+            "Départeur",
+            "Louise",
+        ];
+        return view('home', compact('students'));
     }
 }
 // test controller
